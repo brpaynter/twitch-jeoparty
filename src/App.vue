@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <jeoparty />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import jeoparty from './components/jeoparty.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    jeoparty
+  },
+  data: function() {
+      return {
+      }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    #maincontainer {
+        height: calc(100vh - 60px);
+    }
 </style>
