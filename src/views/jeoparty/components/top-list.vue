@@ -35,7 +35,7 @@
         overflow-y: scroll;
         bottom: 0px;
         position: absolute;
-        top: 125px;
+        top: 155px;
         width: 350px;
     }
     .el-table * {
@@ -52,6 +52,11 @@
     }
     .el-table__header-wrapper {
         display: none;
+    }
+
+    .el-table .cell {
+      font-size: 1.5em;
+      line-height:20px;
     }
 
 </style>

@@ -1,8 +1,7 @@
 <template>
     <el-container>
-        <el-header>
+        <el-header height="90px">
             <h1>Twitch Jeoparty</h1>
-
         </el-header>
         <el-container id="maincontainer">
 
@@ -19,7 +18,7 @@
 </template>
 
 <script>
-    import topList from '@/components/top-list.vue'
+    import topList from '@/views/jeoparty/components/top-list.vue'
 
     export default {
       components: {
@@ -64,22 +63,28 @@
 </script>
 
 <style>
-    .el-header, .el-footer {
-      background-color: #18181b;
-      color: #fff;
-      text-align: center;
-      line-height: 60px;
-    }
+  #maincontainer {
+      height: calc(100vh - 90px);
+  }
 
-    .el-aside {
-      background-color: #1f1925;
-      color: #fff;
-      text-align: center;
-    }
+  .el-header {
+    background-color: #18181b;
+    color: #fff;
+    text-align: center;
+  }
+  .el-header h1 {
+    font-size: 4em;
+  }
 
-    .el-main {
-      background-color: #E9EEF3;
-      color: #333;
-      text-align: center;
-    }
+  .el-aside {
+    background-color: #1f1925;
+    color: #fff;
+    text-align: center;
+  }
+
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+  }
 </style>
